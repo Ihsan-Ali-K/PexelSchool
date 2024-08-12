@@ -68,7 +68,7 @@ const MainCarousel = () => {
     <div className='frame d-flex '>
 
       <div className="position-relative d-flex">
-        <div className='icon position-absolute top-50 start-0  z-index-1' onClick={handleLeftClick}>
+        <div className='icon position-absolute top-50 start-0  translate-middle-y z-index-1' onClick={handleLeftClick}>
 
           <IoIosArrowDropleftCircle
             size={25}
