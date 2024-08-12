@@ -9,14 +9,10 @@
             font-size: 40px;
             font-weight: bold;
             color: #ff8d29;
-            opacity: 0;
-            transform: translateY(20px); // Optional: Start slightly lower
-            transition: opacity 1s ease, transform 1s ease; // Transition for both opacity and position
+  
+           
             
-            &.appear {
-                opacity: 1; // Make the element fully visible
-                transform: translateY(0); // Move the element to its final position
-            }
+           
         }
       
 
@@ -68,4 +64,27 @@
     background: linear-gradient(#ff8d29, #fcb900);
     color: white;
 
+}
+
+@media (max-width: 768px) {
+    .frame{
+
+        .overlay-text  {
+            h2{
+                font-size: 20px; /* Adjust the size for small screens */
+            }
+            p {
+                font-size: 12px;
+                color: white;
+                background-color: #ff8d29;
+            }
+    
+            i {
+                font-size: 12px;
+                background-color: #ff8d29;
+    
+                color: white;
+            }
+        }
+    }
 }
