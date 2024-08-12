@@ -1,0 +1,24 @@
+.first-column img{
+       height: 100px;
+}
+.footer {
+    background-color: #ADD8E6;
+   
+    
+}
+.footer .social-icons{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: #93a4aa;
+}
+.footer .social-icons:hover{
+    transition: all ease 0.5s;
+    background: #FEA439;
+    color: white;
+}

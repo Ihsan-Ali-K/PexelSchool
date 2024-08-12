@@ -1,0 +1,72 @@
+.about {
+    position: relative;
+     height: 100vh; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content{
+        width: 80%;
+        height: 80%;
+        box-shadow: 10px 10px 30px rgb(12, 12, 12);
+        text-align: center;
+        h1{
+            font-weight: bold;
+            font-size: 50px;
+            span{
+                color: #FEA439;
+                font-size: 70px;
+            }
+        }
+        .border{
+            background-color: #FEA439;
+            height: 5px;
+            width: 100px;
+        }
+        .border-1{
+            background-color: #FEA439;
+            height: 3px;
+            width: 200px;
+        }
+        h2{
+            border-bottom: 3px solid #FEA439;
+        }
+        p{
+            font-size: 22px;
+            font-weight: 500;
+        }
+    }
+}
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/about.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    opacity: 0.5; /* 60% opacity for the background image */
+    z-index: 1; /* Place it behind the content */
+}
+.about > div {
+    position: relative;
+    z-index: 2; /* Place content above the background */
+    color: #000000; /* Optional: Adjust text color for visibility */
+}
+@media only screen and (max-width: 768px) {
+
+   .about{
+    .content{
+        p{
+            font-size: 16px;
+        }
+       }
+    
+   }
+   
+   
+  }

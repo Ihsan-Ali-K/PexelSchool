@@ -1,0 +1,60 @@
+.offcanvas-header {
+    height: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow at the bottom */
+    background: rgb(8, 8, 107);
+
+   }
+   .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+  }
+  
+  .btn-close:hover {
+    filter: invert(1) grayscale(100%) brightness(150%);
+  }
+.offcanvas{
+
+    img{
+        height: 30px;
+    }
+    
+}
+.link{
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+        font-weight: 750;
+        
+      }
+      a:hover {
+        color: #f63a3a;
+    
+      }
+}
+
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+.offcanvas-footer{
+   
+    margin-top: auto;
+    
+        a {
+            text-decoration: none;
+            color: hsl(0, 0%, 50%);
+            font-size: 15px;
+            font-weight: 750;
+            
+          }
+          a:hover{
+            color: #f63a3a;
+          }
+          i:hover{
+            cursor: pointer;
+            color: #f63a3a;;
+          }
+    
+}

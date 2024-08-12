@@ -1,0 +1,41 @@
+.login {
+    height: calc(100vh - 75px);
+   background-color: #69d9e8;
+    
+
+    .form{
+        position: absolute;
+        background-color: #FEA439;
+        box-shadow: 10px 10px 20px rgb(9, 100, 91);
+        padding: 20px;
+        border-radius: 20px;
+        height: 400px;
+        width: 350px;
+    }
+    
+    .image {
+        overflow: hidden;
+       
+        
+        img {
+            max-height: 500px;
+            object-fit: cover; // Ensures the image covers the container without stretching
+        }
+    }
+    button{
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: medium;
+        border: none;
+        margin-top: 30px;
+        box-shadow: 1px 1px 10px black;
+
+        &:hover{
+            background-color: rgb(9, 100, 91);
+            color: white;
+        box-shadow: 1px 1px 10px white;
+
+        }
+    }
+}

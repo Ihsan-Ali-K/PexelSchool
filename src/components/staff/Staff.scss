@@ -1,0 +1,96 @@
+.staff{
+    span{
+        color: #FEA439;
+        font-size: 60px;
+        font-weight: bold;
+    }
+    .border{
+        height: 5px;
+        width: 80px;
+        background-color: #FEA439;
+    }
+    .border-one{
+        height: 5px;
+        width: 150px;
+        background-color: #FEA439;
+    }
+    .cards{
+            gap: 10px;
+        .card{
+            max-width: 350px;
+            border: 10px solid #FEA439;
+            border-top-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            overflow: hidden;
+
+
+            .read-more{
+                background-color: #FEA439;
+                
+                margin-right: 5px;
+                margin-bottom: 5px;
+                width: 70px; /* Initial width */
+                height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+               
+
+                color: white;
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+                transition: all 0.6s ease;
+                &:hover{
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: 0;
+                    margin-right: 0;
+                    border-top-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    transition: all 0.6s ease;
+                    h6{
+                        display: none;
+                    }
+                    .social-icons{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                }
+                .social-icons{
+                    display: none;
+                }
+                .social-icon {
+                    
+                    cursor: pointer;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 50%;
+                    z-index: 100;
+                    background-color: white;
+                    color:#FEA439; 
+                    opacity: 100% !important;
+                   
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  
+                    
+                }
+               
+            }
+            
+            
+        }
+        .image{
+            width: 100%;
+           
+            
+        }
+        img{
+            max-width: 100%;
+            height: 280px;
+           
+        }
+    }
+}

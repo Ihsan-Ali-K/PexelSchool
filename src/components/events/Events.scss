@@ -1,0 +1,39 @@
+.events{
+    .border{
+        height: 5px;
+        width: 80px;
+        background-color: #FEA439;
+    }
+    .border-one{
+        height: 5px;
+        width: 150px;
+        background-color: #FEA439;
+    }
+    .card{
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 450px;
+        
+    }
+    .image{
+        
+       
+        img{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+        }
+    
+    }
+    h4{
+        color: #fea439;
+    }
+    button{
+        outline: none;
+        border: none;
+        background-color: inherit;
+        color: #FEA439;
+    }
+}

@@ -1,0 +1,84 @@
+@keyframes colorChange {
+    0% {
+        background-color: #19C1B6;
+    }
+    30% {
+        background-color: rgb(4, 125, 139); 
+    }
+    60% {
+        background-color: rgb(2, 79, 100);
+    }
+    100% {
+        background-color: #18a99f;
+    }
+   
+}
+
+.Navbar {
+    background-color: rgb(8, 8, 107);
+    animation: colorChange 3s infinite; /* Adjust the duration as needed */
+}
+
+.Navbar .image{
+    height: 60px;
+}
+.links a{
+    font-weight: medium;
+   color: rgb(212, 211, 211);
+}
+.links a:hover{
+    color: white;
+}
+.links .active{
+    color: white;
+    border-bottom: 3px solid white;
+}
+.menu {
+    display: none;
+}
+.Navbar .button{
+    width: 200px;
+    background: #FEA439;
+    height: 55px;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: medium;
+    border: none;
+    color: black;
+}
+.Navbar .button:hover{
+    color: white;
+}
+.Navbar .social-icons{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: #62c5e9;
+}
+.Navbar .social-icons:hover{
+    transition: all ease 0.5s;
+    background: #FEA439;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Your CSS styles for smaller screens go here */
+
+    .links a {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+   
+    .Navbar .image{
+        height: 30px;
+    }
+   
+  }

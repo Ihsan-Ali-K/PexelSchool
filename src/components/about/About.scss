@@ -1,0 +1,38 @@
+.about-us{
+      .border{
+        height: 5px;
+        width: 50px;
+        background-color: #FEA439;
+      }
+      .border-1{
+        height: 4px;
+        width: 100px;
+        background-color: #FEA439;
+      }
+      span{
+        color: #FEA439;
+        font-size: 50px;
+      }
+      img{
+        opacity: 70%;
+        object-fit: cover;
+        width: 100%;
+      }
+      .text{
+        max-width: 100%;
+        overflow: hidden;
+        background-color: rgba(9, 147, 151, 0.5);
+        
+            h1{
+               
+            color: white;
+            font-weight: bold;
+            
+        }
+        p{
+            text-wrap: wrap;
+            color: white;
+            font-size: 16px;
+        }
+      }
+}

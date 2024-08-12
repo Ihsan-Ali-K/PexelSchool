@@ -1,0 +1,111 @@
+.principal {
+    box-shadow: 10px 10px 10px rgba(57, 57, 57, 0.5);
+    
+    margin-bottom: 20px;
+    margin-top: 50px;
+
+     span {
+        color: #FEA439;
+        font-size: 60px;
+        font-weight: bold;
+
+    }
+
+    .border {
+        height: 7px;
+        width: 100px;
+        background: #FEA439;
+        border-radius: 10px;
+    }
+
+    .border-1 {
+        height: 7px;
+        width: 200px;
+        background: #FEA439;
+        border-radius: 10px;
+    }
+
+
+
+    .principal-message {
+
+        max-width: 100%;
+        overflow: hidden;
+
+
+    }
+
+    h3 {
+        border-bottom: 4px solid #FEA439;
+        max-width: 125px;
+        padding: 2px;
+        color: rgb(112, 111, 111);
+        font-weight: medium;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 20px;
+        color: rgb(36, 36, 36);
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    img {
+        // max-height: 500px;
+        // max-width: 350px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        flex: 0 0 100%;
+        transform: rotate(5deg);
+    }
+
+    .principal-links {
+        top: 0;
+        width: 100%;
+        height: 100%;
+        left: -600px;
+        background-color: rgb(84, 84, 84, 0.5);
+       
+        z-index: 50;
+        position: absolute;
+        transform: rotate(5deg);
+        transition: all 0.7s ease;
+
+        .social-icon {
+            cursor: pointer;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            z-index: 100;
+            background-color: #FEA439;
+            color: white;
+            opacity: 100% !important;
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            
+        }
+        h3{
+            color: white;
+        }
+    }
+
+    &:hover {
+        .principal-links {
+            transition: all 0.7s ease;
+
+            left: 0px;
+        }
+    }
+}

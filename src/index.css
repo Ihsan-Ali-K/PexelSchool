@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+    
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #F0F0F0;/* Bootstrap's light gray background */
+    color: #212529; /* Bootstrap's body text color */
+    
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+  }
+  a {
+   
+    text-decoration: none;
+  }
+  .container-fluid {
+    padding: 0; /* Reset Bootstrap's default padding */
+  }
+  .container{
+    padding: 0; /* Reset Bootstrap's default padding */
+
+  }

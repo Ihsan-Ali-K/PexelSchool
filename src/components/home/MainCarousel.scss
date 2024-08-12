@@ -1,0 +1,71 @@
+.frame {
+    width: 100%;
+    height: calc(100vh - 75px);
+    overflow: hidden;
+    position: relative;
+
+    .overlay-text {
+        h2 {
+            font-size: 40px;
+            font-weight: bold;
+            color: #ff8d29;
+            opacity: 0;
+            transform: translateY(20px); // Optional: Start slightly lower
+            transition: opacity 1s ease, transform 1s ease; // Transition for both opacity and position
+            
+            &.appear {
+                opacity: 1; // Make the element fully visible
+                transform: translateY(0); // Move the element to its final position
+            }
+        }
+      
+
+        p {
+            font-size: 20px;
+            color: white;
+            background-color: #ff8d29;
+        }
+
+        i {
+            font-size: 20px;
+            background-color: #ff8d29;
+
+            color: white;
+        }
+    }
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+
+}
+
+.slider .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the container without stretching */
+    flex: 0 0 100%;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: rgb(2, 79, 100);
+    z-index: 10;
+}
+
+.icon:hover {
+    background: linear-gradient(#ff8d29, #fcb900);
+    color: white;
+
+}
