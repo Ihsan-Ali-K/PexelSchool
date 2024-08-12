@@ -1,6 +1,6 @@
 .frame {
     width: 100%;
-    height: calc(100vh - 75px);
+    max-height: calc(100vh - 75px);
     overflow: hidden;
     position: relative;
 
