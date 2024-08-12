@@ -3,7 +3,13 @@ import "./Offcanvas.css"
 import Logo from "../../assets/logo-light.png"
 import { Link } from 'react-router-dom'
 const Offcanvas = () => {
-  
+  function handleCloseOffcanvas() {
+    const offcanvasElement = document.querySelector('.offcanvas');
+    const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+    if (offcanvasInstance) {
+      offcanvasInstance.hide();
+    }
+  }
   return (
     <div>
 
@@ -15,13 +21,13 @@ const Offcanvas = () => {
         <div className="offcanvas-body ">
           <div className='link d-flex flex-column mt-2'>
           <Link to=''>Home</Link >
-                <Link to='about'className="  text-reset" data-bs-dismiss="offcanvas" aria-label="Close" >About</Link >
-                <Link to='events' className="  text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Events</Link >
-                <Link to='staff' className="  text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Staff</Link >
-                <Link to='gallery' className="  text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Gallery</Link >
-                <Link to='contact' className="  text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Contact</Link >
-                <Link to='login' className="  text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Login</Link >
-                <Link to='register' className="  text-reset" data-bs-dismiss="offcanvas" aria-label="Close">Register</Link >
+                <Link to='about'  onClick={handleCloseOffcanvas}>About</Link >
+                <Link to='events' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Events</Link >
+                <Link to='staff' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Staff</Link >
+                <Link to='gallery' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Gallery</Link >
+                <Link to='contact' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Contact</Link >
+                <Link to='login' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Login</Link >
+                <Link to='register' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Register</Link >
           </div>
           <div className='offcanvas-footer'>
             
