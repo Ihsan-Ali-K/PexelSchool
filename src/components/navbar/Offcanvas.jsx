@@ -2,14 +2,23 @@ import React from 'react'
 import "./Offcanvas.css"
 import Logo from "../../assets/logo-light.png"
 import { Link } from 'react-router-dom'
+import { Offcanvas as BootstrapOffcanvas } from 'bootstrap';
 const Offcanvas = () => {
   function handleCloseOffcanvas() {
     const offcanvasElement = document.querySelector('.offcanvas');
-    const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+    const offcanvasInstance = BootstrapOffcanvas.getInstance(offcanvasElement);
     if (offcanvasInstance) {
       offcanvasInstance.hide();
     }
+    
+    // Manually remove the backdrop if needed
+    const backdrop = document.querySelector('.offcanvas-backdrop');
+    if (backdrop) {
+      backdrop.remove();
+    }
   }
+
+  
   return (
     <div>
 
@@ -20,7 +29,7 @@ const Offcanvas = () => {
         </div>
         <div className="offcanvas-body ">
           <div className='link d-flex flex-column mt-2'>
-          <Link to=''>Home</Link >
+          <Link to='' onClick={handleCloseOffcanvas}>Home</Link >
                 <Link to='about'  onClick={handleCloseOffcanvas}>About</Link >
                 <Link to='events' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Events</Link >
                 <Link to='staff' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Staff</Link >
