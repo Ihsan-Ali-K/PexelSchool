@@ -23,7 +23,7 @@ const Navbar = () => {
             </div>
             <div className='links d-flex p-4 fs-5  gap-md-3    '>
                 <Link to='' className={`${location.pathname === '/'? 'active': ''}`}>Home</Link >
-                <Link to='about'  className={`${location.pathname === '/about'? 'active': ''}`}>About</Link >
+                <Link to='/about'  className={`${location.pathname === '/about'? 'active': ''}`}>About</Link >
                 <Link to='events' className={`${location.pathname === '/events'? 'active': ''}`}>Events</Link >
                 <Link to='staff' className={`${location.pathname === '/staff'? 'active': ''}`}>Staff</Link >
                 <Link to='gallery' className={`${location.pathname === '/gallery'? 'active': ''}`}>Gallery</Link >

@@ -30,7 +30,7 @@ const Offcanvas = () => {
         <div className="offcanvas-body ">
           <div className='link d-flex flex-column mt-2'>
           <Link to='' onClick={handleCloseOffcanvas}>Home</Link >
-                <Link to='about'  onClick={handleCloseOffcanvas}>About</Link >
+                <Link to='/about'  onClick={handleCloseOffcanvas}>About</Link >
                 <Link to='events' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Events</Link >
                 <Link to='staff' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Staff</Link >
                 <Link to='gallery' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Gallery</Link >
