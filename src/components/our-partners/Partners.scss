@@ -1,0 +1,44 @@
+.partners{
+    background-color: #6ad1ca;
+    .border{
+        height: 5px;
+        width: 80px;
+        background-color: #FEA439;
+    }
+    .border-one{
+        height: 5px;
+        width: 150px;
+        background-color: #FEA439;
+    }
+    span{
+        color: #FEA439;
+    }
+    .images{
+        
+        overflow:visible;
+        width: 300px;
+        
+        height: 200px;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    
+      
+}
+
+@media (max-width : 768px) {
+    .partners{
+        .images{
+        
+            
+            img{
+             
+                object-fit: contain;
+            }
+        }
+    }
+    
+}

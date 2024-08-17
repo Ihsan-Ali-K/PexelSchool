@@ -5,8 +5,8 @@ import { FaFacebook, FaInstagramSquare, FaLinkedin } from 'react-icons/fa'
 import { IoLogoWhatsapp } from 'react-icons/io'
 const Footer = () => {
     return (
-        <div className="container-fluid footer p-3 py-4 gap-3">
-            <div className='row'>
+        <div className="container-fluid footer p-3 pt-5 gap-3">
+            <div className='row gap-4 gap-md-0'>
                 <div className='col-md-5 '>
                     <div className='first-column d-flex justify-content-center'>
                         <img src={Logo} alt='logo' color='black' />
@@ -24,14 +24,14 @@ const Footer = () => {
                 </div>
                 <div className='col-md-2'>
                     <div className='d-flex flex-column gap-2'>
-                        <h5>About</h5>
+                        <h5 className='fw-bold'>About</h5>
                         <a href='' >About</a>
                         <a href='' >Teachers</a>
                         <a href='' >Gallery</a>
                     </div></div>
                 <div className='col-md-3'>
                     <div className='d-flex flex-column gap-2'>
-                        <h5>Contact Us</h5>
+                        <h5 className='fw-bold'>Contact Us</h5>
                         <p>+225 0797010206/+225 2722273123</p>
                         <p>
                             <a href="mailto:info@lepexschool.education">info@lepexschool.education</a>
@@ -41,17 +41,17 @@ const Footer = () => {
                 </div>
                 <div className='col-md-2'>
                     <div className='d-flex flex-column gap-2'>
-                        <h5>Resources</h5>
+                        <h5 className='fw-bold'>Resources</h5>
                         <a href=''>Terms and Conditions</a>
                         <a href=''>Privacy Policy</a>
                         <a href=''>Login</a>
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='pt-5'>
                 <p className='text-center'>© All the rights reserved to The LEPEX school group.</p>
             </div>
-           
+
         </div>
     )
 }

@@ -11,7 +11,7 @@ const Staff = () => {
         <div className="border-one"></div>
 
       </div>
-      <div  className='cards d-flex justify-content-center flex-wrap'>
+      <div  className='cards d-flex justify-content-center gap-4 flex-wrap'>
         {
           staffData.map((item, index) => (
             <Card data={item} key={index}/>

@@ -6,6 +6,7 @@ import Principal from './Principal'
 import ProfessionalStaff from './ProfessionalStaff'
 import { staffData } from './staffData'
 import SeeMore from './SeeMore'
+import Partners from '../our-partners/Partners'
 const Home = () => {
   return (
     <div className='container-fluid'>
@@ -18,6 +19,7 @@ const Home = () => {
         ))
       }
       <SeeMore />
+      <Partners />
       
     
     </div>

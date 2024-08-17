@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Offcanvas.css"
+import "./Offcanvas.scss"
 import Logo from "../../assets/logo-light.png"
 import { Link } from 'react-router-dom'
 import { Offcanvas as BootstrapOffcanvas } from 'bootstrap';
@@ -10,7 +10,7 @@ const Offcanvas = () => {
     if (offcanvasInstance) {
       offcanvasInstance.hide();
     }
-    
+
     // Manually remove the backdrop if needed
     const backdrop = document.querySelector('.offcanvas-backdrop');
     if (backdrop) {
@@ -18,7 +18,7 @@ const Offcanvas = () => {
     }
   }
 
-  
+
   return (
     <div>
 
@@ -28,24 +28,19 @@ const Offcanvas = () => {
           <button type="button" className="btn-close  text-reset" data-bs-dismiss="offcanvas" aria-label="Close"  ></button>
         </div>
         <div className="offcanvas-body ">
-          <div className='link d-flex flex-column mt-2'>
-          <Link to='' onClick={handleCloseOffcanvas}>Home</Link >
-                <Link to='/about'  onClick={handleCloseOffcanvas}>About</Link >
-                <Link to='events' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Events</Link >
-                <Link to='staff' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Staff</Link >
-                <Link to='gallery' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Gallery</Link >
-                <Link to='contact' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Contact</Link >
-                <Link to='login' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Login</Link >
-                <Link to='register' className="  text-reset" onClick={handleCloseOffcanvas} aria-label="Close">Register</Link >
+          <div className='link d-flex flex-column  p-3'>
+            <Link to='' onClick={handleCloseOffcanvas}>Home</Link >
+            <Link to='/about' onClick={handleCloseOffcanvas}>About</Link >
+            <Link to='events'  onClick={handleCloseOffcanvas} aria-label="Close">Events</Link >
+            <Link to='staff'  onClick={handleCloseOffcanvas} aria-label="Close">Staff</Link >
+            <Link to='gallery'  onClick={handleCloseOffcanvas} aria-label="Close">Gallery</Link >
+            <Link to='contact'  onClick={handleCloseOffcanvas} aria-label="Close">Contact</Link >
+            <Link to='login'  onClick={handleCloseOffcanvas} aria-label="Close">Login</Link >
+            <Link to='register'  onClick={handleCloseOffcanvas} aria-label="Close">Register</Link >
           </div>
           <div className='offcanvas-footer'>
-            
-            <div className='d-flex'>
-              <div ><i className="fa-brands fa-facebook  fa-sm" ></i></div>
-              <div className='mx-3'><i className="fa-brands fa-twitter fa-sm"></i></div>
-              <div ><i className="fa-brands fa-youtube fa-sm"></i></div>
-              <div className='mx-3'><i className="fa-brands fa-pinterest fa-sm"></i></div>
-            </div>
+
+
             <div className='mt-2'>
               <a href='' >Home</a>
               <a href='' className='mx-2' >About Us</a>

@@ -1,0 +1,72 @@
+.offcanvas {
+  .offcanvas-header {
+    height: 48px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a slight shadow at the bottom */
+    background-color: rgb(4, 125, 139);
+
+  }
+
+  .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+  }
+
+  .btn-close:hover {
+    filter: invert(1) grayscale(100%) brightness(150%);
+  }
+
+
+  img {
+    height: 30px;
+  }
+
+
+  .link {
+    
+    
+    a{
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 5px;
+      border-radius: 5px;
+
+      &:hover {
+        color: white;
+        background-color: #FEA439;
+        
+  
+      }
+    }
+
+  }
+
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+  }
+
+  .offcanvas-footer {
+
+    margin-top: auto;
+
+    a{
+      text-decoration: none;
+      color: hsl(0, 0%, 50%);
+      font-size: 15px;
+      font-weight: 750;
+      &:hover {
+        color: #FEA439;
+      }
+    }
+
+    
+
+  
+
+  }
+
+}

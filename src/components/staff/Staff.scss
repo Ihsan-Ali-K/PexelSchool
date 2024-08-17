@@ -18,11 +18,12 @@
             gap: 10px;
         .card{
             max-width: 330px;
-            border: 10px solid #FEA439;
+            border: 8px solid #FEA439;
             border-top-left-radius: 50px;
             border-bottom-right-radius: 50px;
             overflow: hidden;
             height: 500px;
+            box-shadow: 1px 1px 10px black;
 
 
             .read-more{
