@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='row gap-4 gap-md-0'>
                 <div className='col-md-5 '>
                     <div className='first-column d-flex justify-content-center'>
-                        <img src={Logo} alt='logo' color='black' />
+                        <img className='logo' src={Logo} alt='logo' color='black' />
                     </div>
 
                     <div className='d-flex gap-3 justify-content-center'>

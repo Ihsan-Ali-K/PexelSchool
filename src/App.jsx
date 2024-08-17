@@ -16,6 +16,7 @@ import Gallery from "./components/gallery/Gallery";
 import Contact from "./components/contact/Contact";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
+import ImageLists from "./components/gallery/ImageLists";
 function App() {
   const Layout = () =>{
    return(
@@ -60,6 +61,9 @@ function App() {
         }, {
           path: "/register",
           element: <Register />
+        }, {
+          path: "/image-list",
+          element: <ImageLists />
         }
       ]
     },

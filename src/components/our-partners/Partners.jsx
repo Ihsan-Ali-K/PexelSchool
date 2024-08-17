@@ -12,7 +12,7 @@ const partners= [
 
 const Partners = () => {
     return (
-        <div className='partners d-flex flex-column gap-1 gap-md-3 py-3 mb-2 px-5'>
+        <div className='container partners d-flex flex-column gap-1 gap-md-3 py-3 mb-2 px-5'>
             <div className='d-flex flex-column align-items-center gap-1'>
                 <h2><span>Our</span> Partners</h2>
                 <div className="border-one"></div>
