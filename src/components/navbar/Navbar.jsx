@@ -35,7 +35,7 @@ const Navbar = () => {
             <div className='buttons d-none d-md-block d-md-flex gap-2 align-items-center'>
             <div className='social-icons'><IoLogoWhatsapp className='cursor-pointer' size={20} /></div>
 
-            <Button className='button' href='/contact' >
+            <Button className='button red-rose' href='/contact' >
                         Contact Us
                     </Button>
             </div>

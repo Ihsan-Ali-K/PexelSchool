@@ -1,16 +1,15 @@
-import React from 'react'
-import Image from "../../assets/teacher.jpeg"
+import React from 'react';
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { FaFacebook } from 'react-icons/fa'
-const Card = () => {
+const Card = ({data}) => {
   return (
-    <div className='position-relative card d-flex flex-column gap-3 p-1 '>
+    <div className='position-relative card d-flex flex-column justify-content-between p-1 '>
         <div className='image'>
-            <img src={Image} alt='teacher' />
+            <img src={data.image} alt={data.name} />
 
         </div>
-        <h3>Name</h3>
-        <h3>Teacher</h3>
+        <h4 >{data.name}</h4>
+        <h5>{data.position}</h5>
 
         <div className='read-more position-absolute bottom-0 end-0'>
             <h6>Read </h6>

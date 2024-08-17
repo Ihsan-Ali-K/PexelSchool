@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Staff.scss"
 import Card from './Card'
+import { staffData } from './staffData'
 const Staff = () => {
   return (
     <div className='container staff py-5 d-flex flex-column gap-5'>
@@ -10,11 +11,15 @@ const Staff = () => {
         <div className="border-one"></div>
 
       </div>
-      <div className='cards d-flex justify-content-center flex-wrap'>
-        <Card />
-        <Card />
-        <Card />
+      <div  className='cards d-flex justify-content-center flex-wrap'>
+        {
+          staffData.map((item, index) => (
+            <Card data={item} key={index}/>
+
+          ))
+        }
       </div>
+
     </div>
   )
 }

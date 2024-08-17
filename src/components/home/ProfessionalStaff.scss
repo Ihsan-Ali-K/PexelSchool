@@ -13,20 +13,26 @@
             height: 450px;
             display: flex;
             align-items: center;
-            border-radius: 20px;
+            border-radius: 30px;
             background-color: rgb(57, 59, 58);
         }
-        img{
+        .img{
             max-height: 450px;
-           border-radius: 20px;
+           border-radius: 30px;
             object-fit: cover;
             transform: rotate(-10deg);
+        }
+        .imge{
+            max-height: 450px;
+           border-radius: 30px;
+            object-fit: cover;
+            transform: rotate(10deg);
         }
     }
     h1{
         color: rgb(2, 79, 100);
     }
-    h2{
+    h3{
         color: #FEA439;
     }
 }
