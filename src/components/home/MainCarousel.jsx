@@ -1,19 +1,19 @@
 import React, { useEffect, useRef, useState } from 'react'
 import "./MainCarousel.scss"
 import { IoIosArrowDropleftCircle, IoIosArrowDroprightCircle } from 'react-icons/io'
-import imageOne from "../../assets/image-one.jpg"
-import imageTwo from "../../assets/image-two.jpg"
-import imageThree from "../../assets/carousel-two.jpeg"
-import imageFour from "../../assets/carousel-one.jpeg"
+import imageThree from "../../assets/front-sliding-3.jpg"
+import imageOne from "../../assets/front-sliding-1.jpg"
+import imageTwo from "../../assets/front-sliding-2.jpg"
+import imageFour from "../../assets/front-sliding-4.jpg"
 import OverlayText from './OverlayText'
 const MainCarousel = () => {
   const sliderRef = useRef(null);
   const [slideNumber, setSlideNumber] = useState(1);
   const images = [
-    imageOne,
-    imageTwo,
     imageThree,
-    imageFour
+    imageOne,
+    imageFour,
+    imageTwo,
   ];
   const length = images.length;
 
@@ -56,7 +56,7 @@ const MainCarousel = () => {
     slideNumber > 1 ? prevSlide() : getLastSlide();
   };
   useEffect(() => {
-    const intervalId = setInterval(nextSlide, 3000);
+    const intervalId = setInterval(nextSlide, 5000);
     
    
     return () => {
@@ -89,7 +89,7 @@ const MainCarousel = () => {
         </div>
        
       </div>
-      <OverlayText />
+      {/* <OverlayText /> */}
 
 
 
