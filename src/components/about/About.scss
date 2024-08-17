@@ -21,7 +21,7 @@
       .text{
         max-width: 100%;
         overflow: hidden;
-        background-color: rgba(9, 147, 151, 0.5);
+        background-color: rgba(9, 147, 151, 0.8);
         
             h1{
                
@@ -32,7 +32,23 @@
         p{
             text-wrap: wrap;
             color: white;
-            font-size: 16px;
+            font-size: 20px;
+            font-weight: bold;
         }
       }
+}
+
+@media (max-width: 768px) {
+  
+  .about-us{
+    .text{
+
+      p{
+        text-wrap: wrap;
+        color: white;
+        font-size: 12px;
+        font-weight: medium;
+      }
+  }
+  }
 }
