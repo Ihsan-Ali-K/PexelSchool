@@ -3,11 +3,17 @@
     .button {
         background-color: #FEA439;
         padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
         border: none;
         border-radius: 10px;
         box-shadow: 10px 10px 20px rgb(2, 79, 100);
         color: white;
         font: medium;
+        &:hover{
+            background-color: rgb(2, 79, 100);
+            box-shadow: 10px 10px 20px rgb(2, 79, 100);
+        }
     }
     
 }

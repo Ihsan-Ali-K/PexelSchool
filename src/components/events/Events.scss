@@ -1,39 +1,72 @@
-.events{
-    .border{
+.events {
+    .border {
         height: 5px;
         width: 80px;
         background-color: #FEA439;
     }
-    .border-one{
+
+    .border-one {
         height: 5px;
         width: 150px;
         background-color: #FEA439;
     }
-    .card{
-        max-width: 350px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 450px;
-        
+    .big-card{
+        background-color: #bbf4f0;
+        border-radius: 20px;
     }
-    .image{
-        
-       
-        img{
-            height: 250px;
-            width: 250px;
-            border-radius: 50%;
+    .image {
+        max-width: 500px;
+        max-height: 500px;
+        overflow: hidden;
+        border-radius: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
-    
     }
-    h4{
-        color: #fea439;
+
+    .info {
+        width: 50%;
+
+        p {
+            text-wrap: wrap;
+        }
+
+        button {
+            outline: none;
+            border: none;
+            color: #FEA439;
+            background-color: inherit;
+        }
+        .icon-link {
+            gap: 2px;
+
+            &:hover {
+                gap: 6px;
+                transition: all 0.5s ease;
+            }
+        }
+        h2{
+            color: #18a99f;
+            font-weight: bold;
+        }
+        
     }
-    button{
-        outline: none;
-        border: none;
-        background-color: inherit;
-        color: #FEA439;
+
+}
+
+@media (max-width: 768px) {
+    .events {
+        .image {
+            max-width: 100%;
+            max-height: 300px;
+            /* Adjust the max-height for smaller screens */
+        }
+
+        .info {
+            width: 100%;
+        }
     }
 }

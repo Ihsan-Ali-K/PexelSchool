@@ -2,19 +2,21 @@ import React from 'react'
 import Image from "../../assets/thanks.jpeg"
 import { FaArrowRightLong } from 'react-icons/fa6'
 
-const Card = () => {
+const Card = ({data, index}) => {
   return (
-    <div className='card p-1'>
-        <div className='image'>
-            <img src={Image} />
+    <div className={`d-flex ${index % 2 !==0 ? 'flex-row-reverse': ""} big-card   flex-wrap  p-1 gap-2 gap-md-5`}>
+      
+      <div className=' info d-flex flex-column p-1 justify-content-center  gap-md-3'>
+         <h2 className='red-rose'>{data.name}</h2>
+         <p >{data.description}</p>
+         <div className='d-flex align-items-center  icon-link '>
+         <button>See More</button><FaArrowRightLong role='button' color='#fea439' />
+         </div>
+      </div>
+      <div className=' image'>
+        <img src={data.image} alt='image' />
 
-        </div>
-        <h4 className='text-center p-1'>Lepex Welcome Carnival</h4>
-        <p className='text-center'>A Joyous celebration to kickstart the acedamic year, filled with games, fun and fun for all students and their families</p>
-        <div className='d-flex gap-2 align-items-center justify-content-center'>
-        <button>Read more</button>
-        <FaArrowRightLong color='#fea439' />
-        </div>
+      </div>
     </div>
   )
 }

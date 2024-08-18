@@ -13,17 +13,23 @@
         color: #FEA439;
         font-size: 50px;
       }
+      .image{
+      max-height: calc(100vh - 80px);
+      overflow: hidden;
       img{
-        opacity: 70%;
-        object-fit: cover;
+        
         width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
       }
       .text{
         max-width: 100%;
+        height: 100%;
         overflow: hidden;
-        background-color: rgba(9, 147, 151, 0.8);
+        background-color: rgba(2, 62, 62, 0.8);
         
-            h1{
+            h2{
                
             color: white;
             font-weight: bold;
@@ -41,6 +47,9 @@
 @media (max-width: 768px) {
   
   .about-us{
+    span{
+      font-size: 35px;
+    }
     .text{
 
       p{
