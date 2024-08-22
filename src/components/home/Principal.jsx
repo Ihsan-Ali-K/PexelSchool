@@ -5,7 +5,9 @@ import { IoLogoWhatsapp } from 'react-icons/io'
 import { FaFacebook } from 'react-icons/fa'
 import {motion} from "framer-motion"
 import { useInView } from 'react-intersection-observer'
+import { useTranslation } from 'react-i18next'
 const Principal = () => {
+  const {t} = useTranslation('home')
   const { ref, inView } = useInView({
     triggerOnce: true, 
      
@@ -19,7 +21,7 @@ const Principal = () => {
           animate={inView ? {opacity: 1, scale: 1} : {opacity: 0}}
           transition={{duration: 1, }}
         
-        className='text-center'><span >M</span>essage from Principal</motion.h1>
+        className='text-center'><span >M</span>{t('messageFromPrincipal')}</motion.h1>
         <div className='border'></div>
         <div className='border-1'></div>
       </div>
@@ -51,8 +53,9 @@ const Principal = () => {
           initial={{opacity: 0}}
           animate={inView ? {opacity: 1} : {opacity: 0}}
           transition={{duration: 1, delay: 0.5}}
-          >“Teaching kids to count is fine, but teaching kids what counts is best.” — Bob Talbert
-            As teachers, we have a lot on our shoulders, and yes, that does mean literally teaching kids their ABCs and their 123s. However, the love and kindness, and compassion we show in the classroom every day is going a long way too! It helps our students see the kind of people they can grow up to be!</motion.p>
+          >{t('quote')}
+          {t('message')}
+          </motion.p>
         </div>
 
       </div>

@@ -32,6 +32,7 @@ const StudentProfile = () => {
       
       <Typography variant="subtitle1" gutterBottom>Date of Birth</Typography>
       <DatePicker
+   
         selected={startDate}
         onChange={(date) => setStartDate(date)}
         style={{ opacity: '1 !important' }}
@@ -39,7 +40,7 @@ const StudentProfile = () => {
         
       />
 
-      <FormControl fullWidth sx={{ mb: 2 , mt:2}}>
+      <FormControl fullWidth sx={{ mb: 2 , mt:2}}  >
         <InputLabel id="gender-select-label">Gender</InputLabel>
         <Select
           labelId="gender-select-label"

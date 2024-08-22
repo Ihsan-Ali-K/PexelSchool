@@ -3,18 +3,20 @@
     max-height: calc(100vh - 75px);
     overflow: hidden;
     position: relative;
-
+   
     .overlay-text {
-        h2 {
-            font-size: 40px;
+        
+        h1 {
+           font-size: 50px;
             font-weight: bold;
             color: #ff8d29;           
         }      
 
         p {
-            font-size: 20px;
+            font-size: 25px;
             color: white;
             background-color: #ff8d29;
+            
         }
 
         i {
@@ -65,8 +67,8 @@
     .frame{
 
         .overlay-text  {
-            h2{
-                font-size: 20px; /* Adjust the size for small screens */
+            h1{
+                font-size: 25px; /* Adjust the size for small screens */
             }
             p {
                 font-size: 12px;

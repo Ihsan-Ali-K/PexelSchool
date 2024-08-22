@@ -3,8 +3,10 @@ import React, { useEffect } from 'react'
 import "./ProfessionalStaff.scss"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from 'react-intersection-observer'
+import { useTranslation } from 'react-i18next'
 
 const ProfessionalStaff = ({ data, index }) => {
+  const {t} = useTranslation('home')
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -28,9 +30,9 @@ const ProfessionalStaff = ({ data, index }) => {
           animate={inView ? {y:0, opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 1, }}
         >
-          <h1 className='red-rose'>{data.name}  </h1>
-          <h3>{data.grade}</h3>
-          <p>{data.description}</p>
+          <h1 className='red-rose'>{t(data.name)}  </h1>
+          <h3>{t(data.grade)}</h3>
+          <p>{t(data.description)}</p>
         </motion.div>
         <div className='col-md-6'>
           <div className='image'>
