@@ -2,6 +2,7 @@ import axelNtakpe from "../../assets/axel-ntakpe.jpg"
 import DianaAmaka from "../../assets/diana-amaka.jpg"
 import Richmond from "../../assets/richmond.jpg"
 import Sandrine from "../../assets/sandrine.jpg"
+import Haleemat from "../../assets/staff.jpg"
 export const staffData = [
     {
       name: 'axelName',
@@ -27,6 +28,13 @@ export const staffData = [
       description: 'richmondMessage',
       image: Richmond
     },
+    {
+      name: "Haleemat Olasunkanmi",
+      grade: "haleematGrade",
+      description: 'haleematMessage',
+      image: Haleemat
+    },
+  
   
    
   ];

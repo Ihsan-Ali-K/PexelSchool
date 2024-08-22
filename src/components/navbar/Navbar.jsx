@@ -53,7 +53,7 @@ const Navbar = () => {
                         animate={{ x: 0, }}
                         transition={{ duration: 1, delay: 0.5 }}
                     >
-                        <Switcher />
+                        {/* <Switcher /> */}
                         <div className='social-icons d-none d-md-flex'><IoLogoWhatsapp className='cursor-pointer' size={20} /></div>
 
                         {/* <Button className='button red-rose d-none d-md-block' href='/contact' >
