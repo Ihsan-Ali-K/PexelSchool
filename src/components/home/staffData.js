@@ -23,7 +23,7 @@ export const staffData = [
       image: DianaAmaka
     },
     {
-      name: "RICHMOND MAHOUE ",
+      name: "Richmond Mahoue",
       grade: "richmondGrade",
       description: 'richmondMessage',
       image: Richmond

@@ -9,6 +9,7 @@ const Card = ({data, index}) => {
       <div className=' info d-flex flex-column p-1 justify-content-center  gap-md-3'>
          <h2 className='red-rose'>{data.name}</h2>
          <p >{data.description}</p>
+         <p>{data.writer}</p>
          <div className='d-flex align-items-center  icon-link '>
          <button>See More</button><FaArrowRightLong role='button' color='#fea439' />
          </div>

@@ -16,9 +16,9 @@ const ProfessionalStaff = ({ data, index }) => {
 
     useEffect(() => {
         if (inViews) {
-            controls.start({ rotate: 0 });
+            controls.start({ rotate: 10 });
         } else {
-            controls.start({ rotate: -20 });
+            controls.start({ rotate: 0 });
         }
     }, [controls, inViews]);
   return (

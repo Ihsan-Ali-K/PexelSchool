@@ -59,8 +59,8 @@ export const staffData = [
     },
    
     {
-        name: "French   ",
-        position: "Pre-KTeacher",
+        name: "Emma Dougnon  ",
+        position: "French Pre-K Teacher",
 
         image: French
     },

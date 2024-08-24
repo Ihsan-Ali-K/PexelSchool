@@ -14,9 +14,11 @@
             display: flex;
             align-items: center;
             border-radius: 30px;
-            background-color: rgb(57, 59, 58);
+            background-color: rgb(122, 136, 129);
+            transform: rotate(-10deg);
         }
         .img{
+            
             max-height: 450px;
            border-radius: 30px;
             object-fit: cover;
