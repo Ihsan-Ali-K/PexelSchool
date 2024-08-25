@@ -9,8 +9,8 @@ import French from "../../assets/french.jpg"
 import Principal from "../../assets/principal.jpg"
 export const staffData = [
     {
-        name: "Axelle OKA Kocor  ",
-        position: "Principal ",
+        name: "Axelle OKA KOCORE  ",
+        position: "Principal/CEO-Chairwoman ",
 
         image: Principal
     },
@@ -21,7 +21,7 @@ export const staffData = [
         image: Carine
     },
     {
-        name: "Cesar Balliet French Pedagogue ",
+        name: "Cesar Balliet (French Pedagogue) ",
         position: "Director of Studies",
 
         image: Cesar
@@ -33,7 +33,7 @@ export const staffData = [
         image: axelNtakpe
     },
     {
-        name: "RICHMOND MAHOUE ",
+        name: "Richmond Mahoue ",
         position: "Grade 4",
 
         image: Richmond

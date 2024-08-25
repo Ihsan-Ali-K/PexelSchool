@@ -19,12 +19,13 @@ export const eventData = [
     },
     {
         name: "Career Day",
-        description: "A Joyous celebration to kickstart the acedamic year, filled with games, fun and fun for all students and their families",
+        description: "“Your education is the foundation; your career is the masterpiece.”",
         image:  Career
     },
     {
-        name: "Teachder Day",
-        description: "A Joyous celebration to kickstart the acedamic year, filled with games, fun and fun for all students and their families",
+        name: "Teacher Day",
+        description: "A good teacher can inspire hope, ignite the imagination , and instill a love of learning.",
+        writer:"-Brad Henry-",
         image:  Teacher
     },
     {

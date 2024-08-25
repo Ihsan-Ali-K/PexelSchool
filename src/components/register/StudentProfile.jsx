@@ -8,8 +8,8 @@ import {
   Typography,
   Box,
 } from '@mui/material';
-import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import DatePicker from 'react-datepicker';
 
 
 const StudentProfile = () => {
@@ -19,9 +19,9 @@ const StudentProfile = () => {
   const [status, setStatus] = useState('');
 
   return (
-    <Box sx={{ p: 3, zIndex: 0  }}  >
+    <Box sx={{ p: 3, zIndex: 0 }}  >
       <Typography variant="h6" gutterBottom>Student Profile</Typography>
-      
+
       <TextField
         id="student-name"
         label="Student Name"
@@ -29,7 +29,7 @@ const StudentProfile = () => {
         variant="outlined"
         sx={{ mb: 2 }}
       />
-      
+
       <Typography variant="subtitle1" gutterBottom>Date of Birth</Typography>
       <DatePicker
    
@@ -40,7 +40,7 @@ const StudentProfile = () => {
         
       />
 
-      <FormControl fullWidth sx={{ mb: 2 , mt:2}}  >
+      <FormControl fullWidth sx={{ mb: 2, mt: 2 }}  >
         <InputLabel id="gender-select-label">Gender</InputLabel>
         <Select
           labelId="gender-select-label"
