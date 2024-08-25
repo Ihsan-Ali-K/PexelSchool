@@ -2,6 +2,8 @@ import ThanksGiving from "../../assets/thanksgiving-1.jpg"
 import Graduation from "../../assets/graduation-11.jpg"
 import Career from "../../assets/career-10.jpg"
 import Teacher from "../../assets/teacher-1.jpg"
+import christmas2 from '../../assets/christmas-2.jpg';
+
 export const eventData = [
     {
         name: "Thanksgiving Day",
@@ -24,6 +26,12 @@ export const eventData = [
         name: "Teachder Day",
         description: "A Joyous celebration to kickstart the acedamic year, filled with games, fun and fun for all students and their families",
         image:  Teacher
+    },
+    {
+        name: "Christmas Day",
+        description: "Christmas means fellowship. feasting, giving and receiving, a time of good cheer, home.",
+        writer:"W.J Tucker",
+        image:  christmas2
     }
 
 ]

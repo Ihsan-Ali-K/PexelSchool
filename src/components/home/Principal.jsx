@@ -46,8 +46,9 @@ const Principal = () => {
           </div>
         </div>
         <div className='col-md-8 d-flex flex-column py-5 gap-2'>
-          <h2>                      Axelle OKA Kocor              </h2>
-          <h3>                      Principal          </h3>
+          <h2>         Axelle OKA KOCORE (Miss OKA)             </h2>
+          <h3>                      Principal/CEO Chairwoman          </h3>
+          <p><strong>MSc.Information Technology & Fintech</strong></p>
           <motion.p 
           ref={ref}
           initial={{opacity: 0}}
