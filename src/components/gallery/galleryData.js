@@ -65,6 +65,19 @@ import teacher8 from '../../assets/teacher-8.jpg';
 import teacher9 from '../../assets/teacher-9.jpg';
 import teacher10 from '../../assets/teacher-10.jpg';
 import teacher11 from '../../assets/teacher-11.jpg';
+//mardis day
+import mardis1 from '../../assets/mardis-1.jpg';
+import mardis2 from '../../assets/mardis-2.jpg';
+import mardis3 from '../../assets/mardis-3.jpg';
+import mardis4 from '../../assets/mardis-4.jpg';
+import mardis5 from '../../assets/mardis-5.jpg';
+import mardis6 from '../../assets/mardis-6.jpg';
+import mardis7 from '../../assets/mardis-7.jpg';
+import mardis8 from '../../assets/mardis-8.jpg';
+import mardis9 from '../../assets/mardis-9.jpg';
+import mardis10 from '../../assets/mardis-10.jpg';
+import mardis11 from '../../assets/mardis-11.jpg';
+import mardis12 from '../../assets/mardis-12.jpg';
 
 export const galleryData = [
     {
@@ -135,34 +148,53 @@ export const galleryData = [
         category: "Graduation",
         catImage: graduation11,
         images: [
-          graduation1,
-          graduation2,
-          graduation3,
-          graduation4,
-          graduation5,
-          graduation6,
-          graduation7,
-          graduation8,
-          graduation9,
-          graduation10,
-          graduation11,
+            graduation1,
+            graduation2,
+            graduation3,
+            graduation4,
+            graduation5,
+            graduation6,
+            graduation7,
+            graduation8,
+            graduation9,
+            graduation10,
+            graduation11,
         ]
-      },
-        {
+    },
+    {
         category: "Teacher Appreciation Day",
         catImage: teacher1,
         images: [
-          teacher1,
-          teacher2,
-          teacher3,
-          teacher4,
-          teacher5,
-          teacher6,
-          teacher7,
-          teacher8,
-          teacher9,
-          teacher10,
-          teacher11,
+            teacher1,
+            teacher2,
+            teacher3,
+            teacher4,
+            teacher5,
+            teacher6,
+            teacher7,
+            teacher8,
+            teacher9,
+            teacher10,
+            teacher11,
         ]
-      }
+    }
+    ,
+    {
+        category: "Mardis Gras Day",
+        catImage: mardis8,
+        images: [
+            mardis1,
+            mardis2,
+            mardis3,
+            mardis4,
+            mardis5,
+            mardis6,
+            mardis7,
+            mardis8,
+            mardis9,
+            mardis10,
+            mardis11,
+            mardis12,
+        ]
+    }
 ]

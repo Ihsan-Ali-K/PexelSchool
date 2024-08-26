@@ -3,6 +3,8 @@ import Graduation from "../../assets/graduation-11.jpg"
 import Career from "../../assets/career-10.jpg"
 import Teacher from "../../assets/teacher-1.jpg"
 import christmas2 from '../../assets/christmas-2.jpg';
+import mardis8 from '../../assets/mardis-8.jpg';
+
 
 export const eventData = [
     {
@@ -33,6 +35,12 @@ export const eventData = [
         description: "Christmas means fellowship. feasting, giving and receiving, a time of good cheer, home.",
         writer:"W.J Tucker",
         image:  christmas2
+    },
+    {
+        name: "Mardis Gras Day",
+        description: "TODAY I WILL DO WHAT OTHERS WON'T, SO TOMORROW I CAN ACCOMPLISH WHAT OTHERS CAN'T.",
+        writer:"-Jerry Rice-",
+        image:  mardis8
     }
 
 ]

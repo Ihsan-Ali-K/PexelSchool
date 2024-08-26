@@ -7,6 +7,8 @@ import Grace from "../../assets/grace.jpg"
 import Carine from "../../assets/carine.jpg"
 import French from "../../assets/french.jpg"
 import Principal from "../../assets/principal.jpg"
+import Haleemat from "../../assets/staff.jpg"
+
 export const staffData = [
     {
         name: "Axelle OKA KOCORE  ",
@@ -44,7 +46,7 @@ export const staffData = [
 
         image: Sandrine
     },
-   
+
     {
         name: "Grace Kouassi  ",
         position: "Grade 2 ",
@@ -52,12 +54,17 @@ export const staffData = [
         image: Grace
     },
     {
+        name: "Haleemat Olasunkanmi",
+        position: "Grade 1",
+        image: Haleemat
+    },
+    {
         name: "Diana Amaka",
         position: "Pre K- Kindergarten ",
 
         image: DianaAmaka
     },
-   
+
     {
         name: "Emma Dougnon  ",
         position: "French Pre-K Teacher",
