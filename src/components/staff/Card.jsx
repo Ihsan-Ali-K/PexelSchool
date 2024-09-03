@@ -1,7 +1,9 @@
 import React from 'react';
 import { IoLogoWhatsapp } from 'react-icons/io'
 import { FaFacebook } from 'react-icons/fa'
+import { useTranslation } from 'react-i18next';
 const Card = ({data}) => {
+  const {t} = useTranslation('staff')
   return (
     <div className='position-relative card d-flex flex-column justify-content-between p-1 '>
         <div className='image'>
@@ -9,7 +11,7 @@ const Card = ({data}) => {
 
         </div>
         <h4 >{data.name}</h4>
-        <h5>{data.position}</h5>
+        <h6>{t(data.position)}</h6>
 
         <div className='read-more position-absolute bottom-0 end-0'>
             <h6>Read </h6>

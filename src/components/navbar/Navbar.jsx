@@ -14,22 +14,24 @@ import Switcher from './Switcher'
 const Navbar = () => {
     const { t } = useTranslation('home')
     const location = useLocation()
-    console.log(location.pathname)
-    const [showSideBar, setShowSideBar] = useState(false)
+    //console.log(location.pathname)
+    //const [showSideBar, setShowSideBar] = useState(false)
     return (
         <>
             <div className='Navbar container-fluid'>
 
                 <div className=' d-flex flex-wrap justify-content-between align-items-center '>
-                    <div className='d-flex '>
-                        <motion.img
-                            src={Logo} className='image'
-                            initial={{ x: -100 }}
-                            animate={{ x: 0, }}
-                            transition={{ duration: 1, delay: 0.5 }}
+                    <Link to='/'>
+                        <div className='d-flex '>
+                            <motion.img
+                                src={Logo} className='image'
+                                initial={{ x: -100 }}
+                                animate={{ x: 0, }}
+                                transition={{ duration: 1, delay: 0.5 }}
 
-                        />
-                    </div>
+                            />
+                        </div>
+                    </Link>
                     <motion.div className='links d-flex p-4 fs-5  gap-md-3    '
                         initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
@@ -46,19 +48,20 @@ const Navbar = () => {
 
                     </motion.div>
                     <div>
-                        
+
                     </div>
-                    <motion.div className='buttons  d-md-flex gap-2 align-items-center px-2'
+                    <motion.div className='buttons  d-flex gap-md-2 align-items-center px-md-2 justify-content-between'
                         initial={{ x: 100 }}
                         animate={{ x: 0, }}
                         transition={{ duration: 1, delay: 0.5 }}
                     >
-                        {/* <Switcher /> */}
-                        <div className='social-icons d-none d-md-flex'><IoLogoWhatsapp className='cursor-pointer' size={20} /></div>
+                            <Switcher />
 
-                        {/* <Button className='button red-rose d-none d-md-block' href='/contact' >
-                            Contact Us
-                        </Button> */}
+                        <div className='social-icons d-none d-md-flex'>
+                            <IoLogoWhatsapp className='cursor-pointer' size={20} />
+                        </div>
+
+                    
                     </motion.div>
                     <div className='menu'>
                         <CiMenuFries className='i' color='white ' size={30} data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" />

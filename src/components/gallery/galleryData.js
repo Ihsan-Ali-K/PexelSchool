@@ -81,7 +81,7 @@ import mardis12 from '../../assets/mardis-12.jpg';
 
 export const galleryData = [
     {
-        category: "School Campus",
+        category: "schoolCampus",
         catImage: campus1,
         images: [
             campus1,
@@ -95,7 +95,7 @@ export const galleryData = [
         ]
     },
     {
-        category: "Christmas Day",
+        category: "christmasDay",
         catImage: christmas1,
         images: [
             christmas1,
@@ -110,7 +110,7 @@ export const galleryData = [
         ]
     },
     {
-        category: "Thanksgiving Day",
+        category: "thanksgivingDay",
 
         catImage: thanksgiving1,
         images: [
@@ -129,7 +129,7 @@ export const galleryData = [
 
     },
     {
-        category: "Career",
+        category: "career",
         catImage: career5,
         images: [
             career1,
@@ -145,7 +145,7 @@ export const galleryData = [
         ]
     },
     {
-        category: "Graduation",
+        category: "graduation",
         catImage: graduation11,
         images: [
             graduation1,
@@ -162,7 +162,7 @@ export const galleryData = [
         ]
     },
     {
-        category: "Teacher Appreciation Day",
+        category: "teacherAppreciationDay",
         catImage: teacher1,
         images: [
             teacher1,
@@ -180,7 +180,7 @@ export const galleryData = [
     }
     ,
     {
-        category: "Mardis Gras Day",
+        category: "mardisGrasDay",
         catImage: mardis8,
         images: [
             mardis1,

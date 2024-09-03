@@ -116,12 +116,12 @@
         img {
             width: 100%;
             height: auto;
-            max-height: 500px; // Set a maximum height for medium screens
+            max-height: 450px; 
            
             object-fit: contain;
         }
         .image {
-            max-height: none; // Allow the image to scale naturally
+            
             .principal-links{
                display: none;
             }

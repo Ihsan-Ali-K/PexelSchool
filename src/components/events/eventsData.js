@@ -8,37 +8,37 @@ import mardis8 from '../../assets/mardis-8.jpg';
 
 export const eventData = [
     {
-        name: "Thanksgiving Day",
-        description: "“Thanksgiving Day is a good day to recommit our energies to giving thanks and just giving.”",
+        name: "thanksgivingDay",
+        description: "thanksgivingQuote",
         writer:"- Amy Grant -",
         image:  ThanksGiving
     },
     {
-        name: "Graduation Day",
-        description: "Graduation is only a concept.In real life every day you graduate.Graduation is a process that goes on until the last day of your life.If you can grasp that, you'll make a difference.",
+        name: "graduationDay",
+        description: "graduationQuote",
         writer:"-Arie Pencovici -",
         image:  Graduation
     },
     {
-        name: "Career Day",
-        description: "“Your education is the foundation; your career is the masterpiece.”",
+        name: "careerDay",
+        description: "careerQuote",
         image:  Career
     },
     {
-        name: "Teacher Day",
-        description: "A good teacher can inspire hope, ignite the imagination , and instill a love of learning.",
+        name: "teacherDay",
+        description: "teacherQuote",
         writer:"-Brad Henry-",
         image:  Teacher
     },
     {
-        name: "Christmas Day",
-        description: "Christmas means fellowship. feasting, giving and receiving, a time of good cheer, home.",
+        name: "christmasDay",
+        description: "christmasQuote",
         writer:"W.J Tucker",
         image:  christmas2
     },
     {
-        name: "Mardis Gras Day",
-        description: "TODAY I WILL DO WHAT OTHERS WON'T, SO TOMORROW I CAN ACCOMPLISH WHAT OTHERS CAN'T.",
+        name: "mardisGrasDay",
+        description: "mardisGrasQuote",
         writer:"-Jerry Rice-",
         image:  mardis8
     }

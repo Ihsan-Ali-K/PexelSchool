@@ -12,62 +12,62 @@ import Haleemat from "../../assets/staff.jpg"
 export const staffData = [
     {
         name: "Axelle OKA KOCORE  ",
-        position: "Principal/CEO-Chairwoman ",
+        position: "principalCEOChairwoman",
 
         image: Principal
     },
     {
         name: "Carine Diangore   ",
-        position: "Administrative Assistant ",
+        position: "administrativeAssistant",
 
         image: Carine
     },
     {
         name: "Cesar Balliet (French Pedagogue) ",
-        position: "Director of Studies",
+        position: "directorOfStudies",
 
         image: Cesar
     },
     {
         name: "Axel Ntakpe",
-        position: "Grade 6",
+        position: "grade6",
 
         image: axelNtakpe
     },
     {
         name: "Richmond Mahoue ",
-        position: "Grade 4",
+        position: "grade4",
 
         image: Richmond
     },
     {
         name: "Sandrine Kouassi ",
-        position: "Grade 3",
+        position: "grade3",
 
         image: Sandrine
     },
 
     {
         name: "Grace Kouassi  ",
-        position: "Grade 2 ",
+        position: "grade2",
 
         image: Grace
     },
     {
         name: "Haleemat Olasunkanmi",
-        position: "Grade 1",
+        position: "grade1",
         image: Haleemat
     },
     {
         name: "Diana Amaka",
-        position: "Pre K- Kindergarten ",
+        position: "preKKindergarten",
 
         image: DianaAmaka
     },
 
     {
         name: "Emma Dougnon  ",
-        position: "French Pre-K Teacher",
+        position: "frenchPreKTeacher",
 
         image: French
     },

@@ -43,7 +43,7 @@ const ProfessionalStaff = ({ data, index }) => {
               ref={refs}
               initial={{ rotate: 0 }}
               animate={controls}
-              transition={{ duration: 5, }}
+              transition={{ duration: 3, }}
               />
             </div>
 

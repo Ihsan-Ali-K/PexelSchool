@@ -3,8 +3,10 @@ import Images from "../../assets/room.jpeg"
 import "./Gallery.scss"
 import { useNavigate } from 'react-router-dom'
 import { galleryData } from './galleryData'
+import { useTranslation } from 'react-i18next'
 
 const Gallery = () => {
+  const {t} = useTranslation('gallery')
   const navigate = useNavigate();
 
   const handleNavigate = (data) => {
@@ -13,7 +15,7 @@ const Gallery = () => {
   return (
     <div className='container gallery py-5 d-flex flex-column gap-3'>
       <div className='d-flex flex-column align-items-start gap-2'>
-        <h1>Gallery</h1>
+        <h1>{t('gallery')}</h1>
         <div className="border"></div>
         <div className="border-one"></div>
 
@@ -25,7 +27,7 @@ const Gallery = () => {
               <img src={item.catImage} alt='room' />
               <div className='position-absolute top-0  text'>
                 <div className='position-absolute text-center start-50 translate-middle-x bottom-0 '>
-                  <p className='title'>{item.category}</p>
+                  <p className='title'>{t(item.category)}</p>
                   <p>({item.images.length} Images)</p>
                 </div>
 

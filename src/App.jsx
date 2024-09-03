@@ -17,12 +17,14 @@ import Contact from "./components/contact/Contact";
 import Login from "./components/login/Login";
 import Register from "./components/register/Register";
 import ImageLists from "./components/gallery/ImageLists";
+import BackToTop from "./components/backToTopButton/BackToTop";
 function App() {
   const Layout = () =>{
    return(
    <>
     <Navbar />
     <Outlet />
+    <BackToTop />
     <Footer />
     </>
    )

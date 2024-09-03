@@ -1,0 +1,17 @@
+{
+    "contactTitle": "Contactez-nous",
+    "get": " ",
+    "address": "Cocody Riviera Cité Sir, Abidjan, Côte d'Ivoire",
+    "email": "info@lepexschool.education",
+    "phonePrimary": "+225 0797010206/+225 2722273123",
+    "phoneSecondary": "+225 0797010206",
+    "firstNameLabel": "Prénom",
+    "firstNamePlaceholder": "prénom",
+    "lastNameLabel": "Nom",
+    "lastNamePlaceholder": "nom",
+    "emailLabel": "Adresse e-mail",
+    "emailPlaceholder": "nom@example.com",
+    "messageLabel": "Votre message",
+    "submitButton": "Soumettre"
+  }
+  

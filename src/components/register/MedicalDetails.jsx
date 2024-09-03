@@ -1,95 +1,101 @@
 import React, { useState } from 'react';
-import { TextField, FormControl, InputLabel, Select, MenuItem, FormControlLabel, Checkbox, Typography, Box, Grid } from '@mui/material';
+import { TextField, FormControlLabel, Checkbox, Typography, Box, Grid } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 
-const MedicalDetalis = () => {
+const MedicalDetails = () => {
+  const { t } = useTranslation('register');
   const [allergies, setAllergies] = useState(false);
   const [chronicDiseases, setChronicDiseases] = useState(false);
   const [disabilities, setDisabilities] = useState(false);
 
   return (
     <Box sx={{ p: 3 }}>
-      <Typography variant="h6" gutterBottom>STUDENT’S NAME:</Typography>
-      <TextField fullWidth variant="outlined" placeholder="Enter student's name" />
+      <Typography variant="h6" gutterBottom>{t('studentNameMed')}</Typography>
+      <TextField
+        fullWidth
+        variant="outlined"
+        placeholder={t('enterStudentNameMed')}
+      />
 
-      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>Vaccinations:</Typography>
+      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>{t('vaccinationsLabel')}</Typography>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={4}>
-          <TextField label="TUBERCULOSE (BCG)" variant="outlined" fullWidth />
+          <TextField label={t('tuberculosisVaccine')} variant="outlined" fullWidth />
         </Grid>
         <Grid item xs={12} sm={4}>
-          <TextField label="DT.COQ.POLIO" variant="outlined" fullWidth />
+          <TextField label={t('dtCoqPolioVaccine')} variant="outlined" fullWidth />
         </Grid>
         <Grid item xs={12} sm={4}>
-          <TextField label="ROUGEOLE" variant="outlined" fullWidth />
+          <TextField label={t('measlesVaccine')} variant="outlined" fullWidth />
         </Grid>
         <Grid item xs={12} sm={4}>
-          <TextField label="FIÈVRE JAUNE (YELLOW FEVER)" variant="outlined" fullWidth />
+          <TextField label={t('yellowFeverVaccine')} variant="outlined" fullWidth />
         </Grid>
       </Grid>
 
-      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>Allergies:</Typography>
+      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>{t('allergiesLabel')}</Typography>
       <FormControlLabel
         control={<Checkbox checked={allergies} onChange={(e) => setAllergies(e.target.checked)} />}
-        label="Does the child have any allergies?"
+        label={t('allergiesQuestion')}
       />
       {allergies && (
         <TextField
           fullWidth
           variant="outlined"
-          placeholder="If yes, which one?"
+          placeholder={t('allergiesDetails')}
           sx={{ mt: 2 }}
         />
       )}
 
-      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>Chronic Diseases:</Typography>
+      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>{t('chronicDiseasesLabel')}</Typography>
       <FormControlLabel
         control={<Checkbox checked={chronicDiseases} onChange={(e) => setChronicDiseases(e.target.checked)} />}
-        label="Does the child have any chronic disease?"
+        label={t('chronicDiseasesQuestion')}
       />
       {chronicDiseases && (
         <TextField
           fullWidth
           variant="outlined"
-          placeholder="If yes, which one?"
+          placeholder={t('chronicDiseasesDetails')}
           sx={{ mt: 2 }}
         />
       )}
 
-      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>Disabilities:</Typography>
+      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>{t('disabilitiesLabel')}</Typography>
       <FormControlLabel
         control={<Checkbox checked={disabilities} onChange={(e) => setDisabilities(e.target.checked)} />}
-        label="Does your child have any disability?"
+        label={t('disabilitiesQuestion')}
       />
       {disabilities && (
         <TextField
           fullWidth
           variant="outlined"
-          placeholder="If yes, which one?"
+          placeholder={t('disabilitiesDetails')}
           sx={{ mt: 2 }}
         />
       )}
 
-      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>Insurance:</Typography>
+      <Typography variant="h6" gutterBottom sx={{ mt: 3 }}>{t('insuranceLabel')}</Typography>
       <TextField
         fullWidth
         variant="outlined"
-        placeholder="Insurance Company"
+        placeholder={t('insuranceCompany')}
         sx={{ mt: 2 }}
       />
       <TextField
         fullWidth
         variant="outlined"
-        placeholder="Insurance Card Number"
+        placeholder={t('insuranceCardNumber')}
         sx={{ mt: 2 }}
       />
       <TextField
         fullWidth
         variant="outlined"
-        placeholder="Child’s Physician name and phone number"
+        placeholder={t('physicianDetails')}
         sx={{ mt: 2 }}
       />
     </Box>
   );
 };
 
-export default MedicalDetalis;
+export default MedicalDetails;

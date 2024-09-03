@@ -10,9 +10,10 @@ import {
 } from '@mui/material';
 import 'react-datepicker/dist/react-datepicker.css';
 import DatePicker from 'react-datepicker';
-
+import { useTranslation } from 'react-i18next';
 
 const StudentProfile = () => {
+  const {t} = useTranslation('register')
   const [startDate, setStartDate] = useState(new Date());
   const [gender, setGender] = useState('');
   const [grade, setGrade] = useState('');
@@ -20,93 +21,94 @@ const StudentProfile = () => {
 
   return (
     <Box sx={{ p: 3, zIndex: 0 }}  >
-      <Typography variant="h6" gutterBottom>Student Profile</Typography>
+      <Typography variant="h6" gutterBottom>
+        {t('studentProfileTitle')}
+      </Typography>
 
       <TextField
         id="student-name"
-        label="Student Name"
+        label={t('studentNameLabel')}
         fullWidth
         variant="outlined"
         sx={{ mb: 2 }}
       />
 
-      <Typography variant="subtitle1" gutterBottom>Date of Birth</Typography>
+      <Typography variant="subtitle1" gutterBottom>
+        {t('dobLabel')}
+      </Typography>
       <DatePicker
-   
         selected={startDate}
         onChange={(date) => setStartDate(date)}
-        style={{ opacity: '1 !important' }}
         customInput={<TextField fullWidth variant="outlined" />}
-        
       />
 
       <FormControl fullWidth sx={{ mb: 2, mt: 2 }}  >
-        <InputLabel id="gender-select-label">Gender</InputLabel>
+        <InputLabel id="gender-select-label">{t('genderLabel')}</InputLabel>
         <Select
           labelId="gender-select-label"
           id="gender-select"
           value={gender}
-          label="Gender"
+          label={t('genderLabel')}
           onChange={(e) => setGender(e.target.value)}
         >
-          <MenuItem value="Male">Male</MenuItem>
-          <MenuItem value="Female">Female</MenuItem>
+          <MenuItem value="Male">{t('Male')}</MenuItem>
+          <MenuItem value="Female">{t('Female')}</MenuItem>
         </Select>
       </FormControl>
 
       <FormControl fullWidth sx={{ mb: 2 }}>
-        <InputLabel id="grade-select-label">Select a Grade</InputLabel>
+        <InputLabel id="grade-select-label">{t('selectGradeLabel')}</InputLabel>
         <Select
           labelId="grade-select-label"
           id="grade-select"
           value={grade}
-          label="Grade"
+          label={t('selectGradeLabel')}
           onChange={(e) => setGrade(e.target.value)}
         >
-          <MenuItem value="PreSchool">PreSchool</MenuItem>
-          <MenuItem value="Kindergarten">Kindergarten</MenuItem>
-          <MenuItem value="Grade 1">Grade 1</MenuItem>
-          <MenuItem value="Grade 2">Grade 2</MenuItem>
-          <MenuItem value="Grade 3">Grade 3</MenuItem>
-          <MenuItem value="Grade 4">Grade 4</MenuItem>
-          <MenuItem value="Grade 5">Grade 5</MenuItem>
-          <MenuItem value="Grade 6">Grade 6</MenuItem>
-          <MenuItem value="Elementary">Elementary</MenuItem>
+          <MenuItem value="PreSchool">{t('PreSchool')}</MenuItem>
+          <MenuItem value="Kindergarten">{t('Kindergarten')}</MenuItem>
+          <MenuItem value="Grade 1">{t('Grade 1')}</MenuItem>
+          <MenuItem value="Grade 2">{t('Grade 2')}</MenuItem>
+          <MenuItem value="Grade 3">{t('Grade 3')}</MenuItem>
+          <MenuItem value="Grade 4">{t('Grade 4')}</MenuItem>
+          <MenuItem value="Grade 5">{t('Grade 5')}</MenuItem>
+          <MenuItem value="Grade 6">{t('Grade 6')}</MenuItem>
+          <MenuItem value="Elementary">{t('Elementary')}</MenuItem>
         </Select>
       </FormControl>
 
       <TextField
         id="previous-school"
-        label="Previous School"
+        label={t('previousSchoolLabel')}
         fullWidth
         variant="outlined"
         sx={{ mb: 2 }}
       />
 
       <FormControl fullWidth sx={{ mb: 2 }}>
-        <InputLabel id="previous-grade-select-label">Select Previous Grade</InputLabel>
+        <InputLabel id="previous-grade-select-label">{t('selectPreviousGradeLabel')}</InputLabel>
         <Select
           labelId="previous-grade-select-label"
           id="previous-grade-select"
           value={grade}
-          label="Grade"
+          label={t('selectPreviousGradeLabel')}
           onChange={(e) => setGrade(e.target.value)}
         >
-          <MenuItem value="PreSchool">PreSchool</MenuItem>
-          <MenuItem value="Kindergarten">Kindergarten</MenuItem>
-          <MenuItem value="Grade 1">Grade 1</MenuItem>
-          <MenuItem value="Grade 2">Grade 2</MenuItem>
-          <MenuItem value="Grade 3">Grade 3</MenuItem>
-          <MenuItem value="Grade 4">Grade 4</MenuItem>
-          <MenuItem value="Grade 5">Grade 5</MenuItem>
-          <MenuItem value="Grade 6">Grade 6</MenuItem>
-          <MenuItem value="Elementary">Elementary</MenuItem>
+          <MenuItem value="PreSchool">{t('PreSchool')}</MenuItem>
+          <MenuItem value="Kindergarten">{t('Kindergarten')}</MenuItem>
+          <MenuItem value="Grade 1">{t('Grade 1')}</MenuItem>
+          <MenuItem value="Grade 2">{t('Grade 2')}</MenuItem>
+          <MenuItem value="Grade 3">{t('Grade 3')}</MenuItem>
+          <MenuItem value="Grade 4">{t('Grade 4')}</MenuItem>
+          <MenuItem value="Grade 5">{t('Grade 5')}</MenuItem>
+          <MenuItem value="Grade 6">{t('Grade 6')}</MenuItem>
+          <MenuItem value="Elementary">{t('Elementary')}</MenuItem>
         </Select>
       </FormControl>
 
       <TextField
         id="parent-guardian"
-        label="Parent / Guardian"
+        label={t('parentGuardianLabel')}
         fullWidth
         variant="outlined"
         sx={{ mb: 2 }}
@@ -114,7 +116,7 @@ const StudentProfile = () => {
 
       <TextField
         id="home-address"
-        label="Home Address"
+        label={t('homeAddressLabel')}
         fullWidth
         variant="outlined"
         sx={{ mb: 2 }}
@@ -122,7 +124,7 @@ const StudentProfile = () => {
 
       <TextField
         id="home-phone"
-        label="Home Phone"
+        label={t('homePhoneLabel')}
         fullWidth
         variant="outlined"
         sx={{ mb: 2 }}
@@ -130,7 +132,7 @@ const StudentProfile = () => {
 
       <TextField
         id="email-address"
-        label="Email Address"
+        label={t('emailLabel')}
         fullWidth
         variant="outlined"
         sx={{ mb: 2 }}
@@ -138,7 +140,7 @@ const StudentProfile = () => {
 
       <TextField
         id="business-address"
-        label="Business Address"
+        label={t('businessAddressLabel')}
         fullWidth
         variant="outlined"
         sx={{ mb: 2 }}
@@ -146,7 +148,7 @@ const StudentProfile = () => {
 
       <TextField
         id="occupation"
-        label="Occupation"
+        label={t('occupationLabel')}
         fullWidth
         variant="outlined"
         sx={{ mb: 2 }}
@@ -154,31 +156,31 @@ const StudentProfile = () => {
 
       <TextField
         id="work-phone"
-        label="Work Phone"
+        label={t('workPhoneLabel')}
         fullWidth
         variant="outlined"
         sx={{ mb: 2 }}
       />
 
       <FormControl fullWidth sx={{ mb: 2 }}>
-        <InputLabel id="status-select-label">Select Parent Status</InputLabel>
+        <InputLabel id="status-select-label">{t('selectParentStatusLabel')}</InputLabel>
         <Select
           labelId="status-select-label"
           id="status-select"
           value={status}
-          label="Status"
+          label={t('selectParentStatusLabel')}
           onChange={(e) => setStatus(e.target.value)}
         >
-          <MenuItem value="Married">Married</MenuItem>
-          <MenuItem value="Living Together">Living Together</MenuItem>
-          <MenuItem value="Separated">Separated</MenuItem>
-          <MenuItem value="Widowed">Widowed</MenuItem>
+          <MenuItem value="Married">{t('Married')}</MenuItem>
+          <MenuItem value="Living Together">{t('Living Together')}</MenuItem>
+          <MenuItem value="Separated">{t('Separated')}</MenuItem>
+          <MenuItem value="Widowed">{t('Widowed')}</MenuItem>
         </Select>
       </FormControl>
 
       <TextField
         id="emergency-contact"
-        label="Emergency Contact"
+        label={t('emergencyContactLabel')}
         fullWidth
         variant="outlined"
         sx={{ mb: 2 }}
@@ -186,7 +188,7 @@ const StudentProfile = () => {
 
       <TextField
         id="relationship"
-        label="Relationship"
+        label={t('relationshipLabel')}
         fullWidth
         variant="outlined"
         sx={{ mb: 2 }}

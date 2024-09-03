@@ -1,10 +1,8 @@
 {
-    "home": "Home",
-    "about": "About",
-    "events": "Events",
-    "staff": "Staff",
-    "gallery": "Gallery",
-    "contact": "Contact",
-    "login": "Login",
-    "register": "Register"
-}
+    "our": "Notre",
+    "firsttitle": " Identité",
+    "ourIdentity": "Le Groupe Scolaire LEPEX est une école bilingue hybride offrant un programme d'apprentissage en français et en anglais, suivant les curricula américain texan et ivoirien français. Notre objectif est de proposer une école entièrement bilingue où les enfants seront non seulement bien versés linguistiquement, mais aussi académiquement dans les deux langues, l'anglais étant la langue la plus parlée au monde.",
+    "secondTitle": " Mission",
+    "ourMission": "L'éducation est primordiale pour toute société soucieuse d'assurer un avenir brillant à ses citoyens. C'est aussi le fondement d'une nation forte et prospère. C'est pourquoi les Etats responsables mettent un point d'honneur à se doter de systèmes éducatifs fiables tout en veillant à ce qu'ils soient adaptés aux enjeux existentiels et de développement. Une bonne éducation implique une bonne transmission des valeurs, des vertus et de la morale, susceptible de faire de l'enfant un citoyen modèle et moderne, respectueux de son prochain et de son environnement, etc. De nos jours, nous assistons à la disparition de beaucoup de ces valeurs au profit d'une morale légère et d'un comportement équivoque. Face à cette dégradation civilisationnelle, nous avons jugé opportun de créer cette institution dont la vocation première est de faire de l'éducation autrement. Pour nous, l'Education repose sur deux axes : un cadre moderne par sa vocation et une âme traditionnelle fondée sur les vertus divines de l'amour et du partage. Le monde n'a plus besoin d'érudits sans scrupules, mais de gens qui craignent Dieu et font Sa volonté. Engageons-nous à faire de ces petits êtres fragiles et délicats les décideurs éclairés de demain ; C'est notre ambition, notre objectif et notre credo. Conscients de notre faiblesse et de nos limites humaines, nous mettons toutes choses entre les mains de Dieu, afin qu'Il fasse de nous des canaux puissants capables de travailler pour un monde meilleur et pacifique."
+  }
+  

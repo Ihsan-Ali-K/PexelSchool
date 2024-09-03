@@ -5,11 +5,13 @@ import { MdOutlineMail } from 'react-icons/md'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { LiaFaxSolid } from 'react-icons/lia'
 import Forms from './Forms'
+import { useTranslation } from 'react-i18next'
 const Contact = () => {
+  const {t} = useTranslation('contact')
   return (
     <div className='container contact p-5 d-flex flex-column gap-4'>
         <div className='d-flex flex-column  gap-2'>
-        <h1><span>Get</span> in touch with Us</h1>
+        <h1><span>{t('get')}</span> {t('contactTitle')}</h1>
         <div className="border"></div>
         <div className="border-one"></div>
 
@@ -26,7 +28,7 @@ const Contact = () => {
       <ImLocation  size={30}/>
         </div>
       
-      <p>Cocody Riviera Cite Sir, Abidjan, Cote D'Ivoire</p>
+      <p>{t('address')}</p>
       
       </div>
       <div className='card'>
@@ -35,7 +37,7 @@ const Contact = () => {
       <MdOutlineMail size={30} />
       </div>
 
-      <p>info@lepexschool.education</p>
+      <p>{t("email")} </p>
       </div>
       <div className='card'>
       <div className="icon" >
@@ -43,7 +45,7 @@ const Contact = () => {
       <FaPhoneAlt size={30} />
       </div>
 
-      <p>+225 0797010206/+225 2722273123</p>
+      <p>{t('phonePrimary') }</p>
       </div>
       <div className='card'>
       <div className="icon" >
@@ -51,13 +53,13 @@ const Contact = () => {
       <LiaFaxSolid size={30} />
       </div>
 
-      <p>+225 0797010206</p>
+      <p>{t('phoneSecondary')} </p>
       </div>
       </div>
       <div className='d-flex flex-column justify-content-center  '>
 
       <Forms />
-      <button >Submit</button>
+      <button >{t('submitButton')} </button>
       </div>
       </div>
     </div>
