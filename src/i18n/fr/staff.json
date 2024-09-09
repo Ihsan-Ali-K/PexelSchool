@@ -1,15 +1,15 @@
 {
   "our":"Notre",
   "staff":" Personnel Professionnel",
-    "principalCEOChairwoman": "Directrice/PDG-Présidente",
+    "principalCEOChairwoman": "Directrice/ Fondatrice",
     "administrativeAssistant": "Assistante Administrative",
     "directorOfStudies": "Directeur des Études",
-    "grade6": "Classe de 6ème",
-    "grade4": "Classe de 4ème",
-    "grade3": "Classe de 3ème",
-    "grade2": "Classe de 2ème",
-    "grade1": "Classe de 1ère",
-    "preKKindergarten": "Pré-maternelle - Jardin d'enfants",
-    "frenchPreKTeacher": "Enseignant de Pré-maternelle en Français"
+    "grade6": "Classe de CM2",
+    "grade4": "Classe de CE2",
+    "grade3": "Classe de CE1",
+    "grade2": "Classe de CP2",
+    "grade1": "Classe de CP1",
+    "preKKindergarten": "Maternelle - Jardin d'enfants",
+    "frenchPreKTeacher": "Enseignante de maternelle en français."
   }
   

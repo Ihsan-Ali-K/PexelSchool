@@ -3,7 +3,11 @@ import "./Offcanvas.scss"
 import Logo from "../../assets/logo-light.png"
 import { Link } from 'react-router-dom'
 import { Offcanvas as BootstrapOffcanvas } from 'bootstrap';
+import { useTranslation } from 'react-i18next';
 const Offcanvas = () => {
+
+  const {t} = useTranslation('home')
+
   function handleCloseOffcanvas() {
     const offcanvasElement = document.querySelector('.offcanvas');
     const offcanvasInstance = BootstrapOffcanvas.getInstance(offcanvasElement);
@@ -29,14 +33,14 @@ const Offcanvas = () => {
         </div>
         <div className="offcanvas-body ">
           <div className='link d-flex flex-column  p-3'>
-            <Link to='' onClick={handleCloseOffcanvas}>Home</Link >
-            <Link to='/about' onClick={handleCloseOffcanvas}>About</Link >
-            <Link to='events'  onClick={handleCloseOffcanvas} aria-label="Close">Events</Link >
-            <Link to='staff'  onClick={handleCloseOffcanvas} aria-label="Close">Staff</Link >
-            <Link to='gallery'  onClick={handleCloseOffcanvas} aria-label="Close">Gallery</Link >
-            <Link to='contact'  onClick={handleCloseOffcanvas} aria-label="Close">Contact</Link >
-            <Link to='login'  onClick={handleCloseOffcanvas} aria-label="Close">Login</Link >
-            <Link to='register'  onClick={handleCloseOffcanvas} aria-label="Close">Register</Link >
+            <Link to='' onClick={handleCloseOffcanvas}>{t('home')}</Link >
+            <Link to='/about' onClick={handleCloseOffcanvas}>{t('about')}</Link >
+            <Link to='events'  onClick={handleCloseOffcanvas} aria-label="Close">{t('events')}</Link >
+            <Link to='staff'  onClick={handleCloseOffcanvas} aria-label="Close">{t('staff')}</Link >
+            <Link to='gallery'  onClick={handleCloseOffcanvas} aria-label="Close">{t('gallery')}</Link >
+            <Link to='contact'  onClick={handleCloseOffcanvas} aria-label="Close">{t('contact')}</Link >
+            <Link to='login'  onClick={handleCloseOffcanvas} aria-label="Close">{t('login')}</Link >
+            <Link to='register'  onClick={handleCloseOffcanvas} aria-label="Close">{t('register')}</Link >
           </div>
           <div className='offcanvas-footer'>
 
